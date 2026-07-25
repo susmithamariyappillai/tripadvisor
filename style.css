@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+
+}
+
+.navbar__s1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+
+
+}
+
+.navbar__s1 img {
+    width: 50px;
+}
+
+.navbar__s2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar__s2 p {
+    cursor: pointer;
+}
+
+.navbar__s3 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar__s3 {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar__s3 button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+/* where to */
+
+.travel {
+    text-align: center;
+    padding: 50px;
+}
+
+.travel h1 {
+    font-size: 60px;
+}
+/* search bar */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap:2px;
+    font-size: 20px;
+    
+}
+
+
+.icon-1 {
+    display: flex;
+    align-items: center;
+    border-bottom: solid black 2px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search__box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+    padding: 5px;
+    width: 70%;
+    border: solid black 1px;
+    border-radius: 30px;
+
+}
+
+.search__box input {
+    flex: 1;
+    font-size: 20px;
+    outline: none;
+
+}
+
+.search__box button {
+    padding: 10px;
+    border: solid black 2px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search__box .button1 {
+    background-color: #00EB5B;
+    color: black;
+    cursor: pointer;
+
+}
+
+.travel-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 450px;
+    background-color: #00EB5B;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px auto;
+
+}
+
+.travel-images__1 {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-right: solid black 2px;
+
+}
+
+.travel-images__1 img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    animation: slide 12s infinite;
+
+}
+
+@keyframes slide {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75%,
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
+
+
+}
+
+.travel-offer {
+    color: #002B11;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.travel-offer button {
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #002B11;
+    color: white;
+}
+
+.interest {
+    padding: 30px;
+}
+
+.interest h3 {
+    padding: 10px;
+    color: #002B11;
+    margin-left: 10px;
+
+}
+
+.interest p {
+    margin-left: 20px;
+    color:#002B11;
+    
+}
+
+.recommened__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.course-card {
+    position: relative;
+    width: 25%;
+
+}
+
+.course-card img {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+.course-card h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.ad-card {
+    display: flex;
+    
+    align-items: center;
+    background-color: #F7F7F7;
+    gap: 30px;
+    margin: 30px;
+    border-radius: 30px;
+    
+
+}
+
+.ad-card img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.ad-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+
+
+.ad-content button{
+    background-color: white;
+    color:#002B11;
+    padding: 20px;
+    border-radius: 30px;
+    border:solid #002B11 2px ;
+    width: 130px;
+    height: 50px;
+    font-weight: bold;
+    
+}
+.coimbator{
+    padding: 20px;
+}
+
+.coimbator h3{
+    padding: 10px;
+    margin-left: 10px;
+   color:#002B11;
+    
+}
+.coimbator p{
+    margin-left: 20px;
+    color:#002B11;
+
+}
+.coimbator__container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 20px;
+    
+}
+.coimbator__explore{
+    width:300px;
+   
+}
+.coimbator__explore img{
+    width: 90%;
+    height: 70%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.coimbator__explore h3{
+   padding-left: 20px;
+}
+.coimbator__explore p{
+    padding:10px;
+    margin-left: 10px;
+}
+.coimbator__experience{
+    
+    padding-left: 10px;
+    margin-top: 80px;
+    
+}
+.coimbator__experience h3{
+    margin-left: 20px;
+    color: #002B11;
+    padding: 10px;
+    
+}
+.coimbator__experience P{
+    margin-left:30px;
+     color: #002B11;
+     
+    
+}
+.donation-box{
+    width: 90%;
+    background-color: #F7F7F7;
+    margin-top: 80px ;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:60px;
+
+}
+.left__box{
+    width: 55%;
+}
+.left__box img{
+    width: 100%;
+    height: 400px;
+   
+}
+.right__box{
+    width: 45%;
+    text-align: center;
+}
+
+
+.desc{
+    line-height: 1.5;
+    color: #002B11;
+    margin-bottom: 30px;
+}
+button{
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #002B11;
+    color: white;
+    cursor: pointer;
+
+}
+.insipiration{
+    padding: 50px;
+    background-color: #F7F7F7;
+    margin-top: 50px;
+    width: 90%;
+    height: 300px;
+}
+.insipiration h3{
+    margin-bottom: 20px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    
+}
+.card{
+    width: 32%;
+    position: relative;
+    
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+.card h3{
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.heart{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.card:hover h3{
+
+    color:#074821;
+    text-decoration:underline;
+}
+.footer{
+        padding: 30px;
+        background-color: black;
+        color: white;
+        margin-top: 80px;
+        
+    }
+
+    .footer__one{
+        display: flex;
+        gap:10px;
+    }
+
+    .footer__one p{
+        margin: 20px;
+    }
+    .footer__two{
+        display: flex;
+        margin:20px;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    /* media qurries */
+    /* ===========================
+   Mobile View (600px)
+=========================== */
+
+@media screen and (max-width:600px){
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+}
+
+.navbar__s2{
+    display:none;
+}
+
+.navbar__s1{
+    width:auto;
+}
+
+.navbar__s1 h1{
+    font-size:28px;
+}
+
+.navbar__s3{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.navbar__s3 p,
+.navbar__s3 button{
+    display:none;
+}
+
+.navbar__s3 i{
+    font-size:20px;
+}
+
+/* Where To */
+
+.travel{
+    padding:20px;
+}
+
+.travel h1{
+    font-size:38px;
+}
+
+/* Search Menu */
+
+.search{
+    display:flex;
+    overflow-x:auto;
+    white-space:nowrap;
+    gap:20px;
+    justify-content:flex-start;
+    padding:10px;
+}
+
+.search::-webkit-scrollbar{
+    display:none;
+}
+
+/* Search Box */
+
+.search__box{
+    width:95%;
+    margin:auto;
+    padding:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.search__box input{
+    width:100%;
+    font-size:16px;
+}
+
+.search__box button{
+    width:100%;
+}
+
+/* Travel Banner */
+
+.travel-images{
+    flex-direction:column;
+    height:auto;
+}
+
+.travel-images__1,
+.travel-offer{
+    width:100%;
+    border:none;
+}
+
+.travel-offer{
+    font-size:18px;
+    padding:20px;
+}
+
+/* Interest */
+
+.recommened__container{
+    flex-direction:column;
+}
+
+.course-card{
+    width:100%;
+}
+
+/* Ad Card */
+
+.ad-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.ad-card img{
+    width:100%;
+    height:auto;
+}
+
+/* Coimbatore Cards */
+
+.coimbator__container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.coimbator__explore{
+    width:100%;
+}
+
+.coimbator__explore img{
+    width:100%;
+    height:auto;
+}
+
+/* Donation */
+
+.donation-box{
+    flex-direction:column;
+    width:95%;
+    margin:20px auto;
+}
+
+.left__box,
+.right__box{
+    width:100%;
+}
+
+.left__box img{
+    height:auto;
+}
+
+/* Inspiration */
+
+.insipiration{
+    width:auto;
+    height:auto;
+    padding:20px;
+}
+
+.cards{
+    flex-direction:column;
+}
+
+.card{
+    width:100%;
+}
+
+/* Footer */
+
+.footer__one,
+.footer__two{
+    flex-direction:column;
+    text-align:center;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+}
